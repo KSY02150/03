@@ -1,18 +1,16 @@
-//scanf()사용법 실습//
+//한자리 숫자를 char형태로 scanf()로 받아서 숫자 형태로 printf()로 출력//
 #include <stdio.h>
 
 int main(void)
 {
-    int input_int;
-    float input_float;
+    char c;
+    int i;
 
-    printf("enter an integer: ");
-    scanf("%d", &input_int);
-
-    printf("enter a float: ");
-    scanf("%f", &input_float);
-
-    printf("integer : %d, float : %f\n", input_int, input_float);
+    printf("input a number:");
+    scanf("%c", &c);
+    
+    i = c - '0'; // char 형태의 숫자를 int형태로 변환//
+    printf("The input number is %i\n", i);
 
     return 0;
 }
