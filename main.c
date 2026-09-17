@@ -1,16 +1,14 @@
-//한자리 숫자를 char형태로 scanf()로 받아서 숫자 형태로 printf()로 출력//
+//알파벳 문자를 하나 입력 받아서 그 다음 문자를 출력//
 #include <stdio.h>
 
 int main(void)
 {
     char c;
-    int i;
 
-    printf("input a number:");
+    printf("enter a character: ");
     scanf("%c", &c);
-    
-    i = c - '0'; // char 형태의 숫자를 int형태로 변환//
-    printf("The input number is %i\n", i);
 
+    printf("The next character of %c (%d) is %c (%d)\n", c, c, c + 1, c + 1);
+    
     return 0;
 }
