@@ -1,14 +1,16 @@
-//알파벳 문자를 하나 입력 받아서 그 다음 문자를 출력//
+//두 개의 숫자를 받아서 나누기를 해주는 프로그램 만들기//
 #include <stdio.h>
 
-int main(void)
-{
-    char c;
-
-    printf("enter a character: ");
-    scanf("%c", &c);
-
-    printf("The next character of %c (%d) is %c (%d)\n", c, c, c + 1, c + 1);
+int main(void) {
+    int n1, n2;
     
+    printf("Enter numerator: ");
+    scanf("%d", &n1);
+
+    printf("Enter denominator: ");
+    scanf("%d", &n2);
+
+    printf("The result of the division is %6f.\n", (float)n1 / n2);
+
     return 0;
 }
